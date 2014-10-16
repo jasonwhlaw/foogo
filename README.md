@@ -3,6 +3,8 @@ fugo
 
 This is an app for ordering food created by Jason Law
 
+```
+
      0000             0000        7777777777777777/========___________
    00000000         00000000      7777^^^^^^^7777/ || ||   ___________
   000    000       000    000     777       7777/=========//
@@ -101,4 +103,5 @@ This is an app for ordering food created by Jason Law
 ###*******       *    ***#****#*      #####    ##########**        **######* **
 #####* **#*  ***    *#*#**##*####     *####    #########**         ***#####****
 
+```
 The ASCII Art : Made By The Dutch Dude    <T.vanEck@fz.hse.nl>     02-28-96
