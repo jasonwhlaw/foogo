@@ -1,2 +1,45 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FooGo</title>
+</head>
+<body>
+
+<div class="modal-body">
+
+
+  <div class="headline"> Enjoy Your Meal Time
+  </div>
+
+  <div class="delivery">Guaranteed  Delivery  By <%= @mealtime.strftime"%H: %M" %>
+
+  </div>
+
+  <div class="signup">
+
+
+    <form class="form col-md-12 center-block">
+      <div class="form-group">
+        <input type="text" class="form-control input-lg" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control input-lg" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary btn-lg btn-block">Log In</button>
+        <button class="btn btn-primary btn-lg btn-block">Sign Up</button>
+        <span class="forgot-password"><span><a href="#">Need help?</a></span>
+<!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
+      </div>
+    </form>
+  </div>
+  <div class="welcome-msg">
+  <p1>Your time is valuable,<br>that's why we aim to bring you a special<br>selection of healthy food quickly. <br>Enjoy what really matters in life.</p1>
+
+  </div>
+
+</div>
+
+</body>
+</html>

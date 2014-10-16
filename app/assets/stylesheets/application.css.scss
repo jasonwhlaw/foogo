@@ -13,3 +13,40 @@
  *= require_tree .
  *= require_self
  */
+
+/*html {
+  background: url(../images/background.jpg) no-repeat center center fixed;
+  min-height:100%;
+
+}*/
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("/assets/Pacifico.ttf");
+}
+
+h1 {
+  font-family: "Pacifico";
+  margin-left: 15px;
+}
+
+body {
+  background-image: url(/assets/background.jpg);
+
+  background-repeat:no-repeat;
+  background-size:cover;
+  min-height:100%;
+  line-height: 1.5em;
+  font-family: "Pacifico";
+  font-weight: normal;
+}
+
+.topnav {
+
+  font-family: "Pacifico";
+  text-align: left;
+  color: black;
+  padding-left: 10px;
+  height: 45px;
+  width: 60px;
+}
