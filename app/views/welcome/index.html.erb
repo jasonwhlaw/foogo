@@ -9,12 +9,9 @@
 <div class="modal-body">
 
 
-  <div class="headline"> Enjoy Your Meal Time
-  </div>
+  <div class="headline"> Enjoy Your Meal Time</div>
 
-  <div class="delivery">Guaranteed  Delivery  By <%= @mealtime.strftime"%H: %M" %>
-
-  </div>
+  <div class="delivery">Guaranteed  Delivery  By <%= @mealtime.strftime"%H: %M" %></div>
 
   <div class="signup">
 
@@ -30,16 +27,37 @@
         <button class="btn btn-primary btn-lg btn-block">Log In</button>
         <button class="btn btn-primary btn-lg btn-block">Sign Up</button>
         <span class="forgot-password"><span><a href="#">Need help?</a></span>
-<!-- <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need help?</a></span> -->
       </div>
     </form>
   </div>
   <div class="welcome-msg">
-  <p1>Your time is valuable,<br>that's why we aim to bring you a special<br>selection of healthy food quickly. <br>Enjoy what really matters in life.</p1>
-
+  <p1>Your time is valuable,<br>that's why we aim to bring you a <br>special selection of healthy food quickly. <br>Enjoy what really matters in life.</p1>
+  </div>
   </div>
 
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <!-- <div class="dailyspecials"> -->
+          <h1>Daily Western Specials:</h1>
+          <h2><%= @itemWestern.name %></h2>
+          <h3>$<%= @itemWestern.price %></h3>
+          <img src="/assets/<%= @itemWestern.photo_path %>"/>
+          <h1>Daily Asian Specials:</h1>
+          <h2><%= @itemAsian.name %></h2>
+          <h3>$<%= @itemAsian.price %></h3>
+          <img src="/assets/<%= @itemAsian.photo_path %>"/>
+          <h1>Daily Adventurous Specials:</h1>
+          <h2><%= @itemAdventurous.name %></h2>
+          <h3>$<%= @itemAdventurous.price %></h3>
+          <img src="/assets/<%= @itemAdventurous.photo_path %>"/>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+
+
 
 </body>
 </html>
