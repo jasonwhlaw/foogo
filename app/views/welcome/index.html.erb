@@ -13,27 +13,32 @@
 
   <div class="delivery">Guaranteed  Delivery  By <%= @mealtime.strftime"%H: %M" %></div>
 
-  <div class="signup">
-
-
-    <form class="form col-md-12 center-block">
-      <div class="form-group">
-        <input type="text" class="form-control input-lg" placeholder="Email">
+ <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="welcome-msg">
+          <p1>Your time is valuable,<br>that's why we aim to bring you a <br>special selection of healthy food quickly. <br>Enjoy what really matters in life.</p1>
+        </div>
       </div>
-      <div class="form-group">
-        <input type="password" class="form-control input-lg" placeholder="Password">
+      <div class="col-md-4">
+        <div class="signup">
+          <form class="form col-md-12 center-block">
+            <div class="form-group">
+              <input type="text" class="form-control input-lg" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control input-lg" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-lg btn-block">Log In</button>
+              <button class="btn btn-primary btn-lg btn-block">Sign Up</button>
+              <span class="forgot-password"><span><a href="#">Need help?</a></span>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary btn-lg btn-block">Log In</button>
-        <button class="btn btn-primary btn-lg btn-block">Sign Up</button>
-        <span class="forgot-password"><span><a href="#">Need help?</a></span>
-      </div>
-    </form>
   </div>
-  <div class="welcome-msg">
-  <p1>Your time is valuable,<br>that's why we aim to bring you a <br>special selection of healthy food quickly. <br>Enjoy what really matters in life.</p1>
-  </div>
-  </div>
+</div>
 
   <div class="container">
     <div class="row">
@@ -41,14 +46,21 @@
           <h1>Daily Western Specials:</h1>
           <h2><%= @itemWestern.name %></h2>
           <h3>$<%= @itemWestern.price %></h3>
+          <a href="/food_item/show/<%= @itemWestern.id %>">Click Here</a>
           <img src="/assets/<%= @itemWestern.photo_path %>"/>
+      </div>
+      <div class="col-md-4">
           <h1>Daily Asian Specials:</h1>
           <h2><%= @itemAsian.name %></h2>
           <h3>$<%= @itemAsian.price %></h3>
+          <a href="/food_item/show/<%= @itemAsian.id %>">Click Here</a>
           <img src="/assets/<%= @itemAsian.photo_path %>"/>
+      </div>
+      <div class="col-md-4">
           <h1>Daily Adventurous Specials:</h1>
           <h2><%= @itemAdventurous.name %></h2>
           <h3>$<%= @itemAdventurous.price %></h3>
+          <a href="/food_item/show/<%= @itemAdventurous.id %>">Click Here</a>
           <img src="/assets/<%= @itemAdventurous.photo_path %>"/>
       </div>
     </div>
